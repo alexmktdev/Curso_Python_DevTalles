@@ -37,3 +37,10 @@ mi_diccionario = {
     'rut': 18679045-6,
 }
 
+# como saber el tipo de dato de un objeto
+print(type(tupla))
+
+# las ventajas de que las cosas sean objetos, es que tienen metodos, y con esos metodos se pueden aplicar 
+# muchas funcionalidades 
+
+# todo en python es un OBJETO !
