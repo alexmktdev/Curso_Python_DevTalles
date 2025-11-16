@@ -45,7 +45,7 @@ while True: # esto se ejecuta siempre..
         print("Intente de Nuevo por favor !")
 
 
-# ahra calculamos el total de la compra 
+# ahora calculamos el total de la compra 
 total = 0
 
 for item in carrito_de_compras:
