@@ -2,7 +2,8 @@
 """
 - Cuenta cuantas veces fue ingresado cierto producto
 - Emite un aviso si es que "tal producto" fue ingresado antes
-
+- Sumar todas las cantidades, por ejemplo se ingresaron papas, cantidad 10 sumarlas, 
+  si despues se piden mas papas volver a sumar la cantidad
 """
 
 # 1. Pedimos el ingreso de los productos por teclado 
@@ -10,7 +11,8 @@
 # modulo 1 - ingreso de productos 
 print("*** modulo 1 - Ingreso de Productos")
 ventas = [] # para guardar los productos 
-contador_papas = 0
+contador_ingreso_papas = 0
+contador_cantidad_papas = 0
 vistos = set() # se ocupa un set, ya que no guarda duplicados 
 opcion = ""
 while opcion != "no":
@@ -25,9 +27,10 @@ while opcion != "no":
             cantidad = int(input(f"Ingrese la cantidad del producto N°{art} "))
             precio = int(input(f"Ingrese el precio del producto N°{art} "))
 
-            # contar cuantas veces se ingreso un cierto articulo
+            # contar cuantas veces se ingreso un cierto articulo y cantidad de papas
             if nombre_producto == "papas":
-                contador_papas+=1
+                contador_ingreso_papas+=1
+                contador_cantidad_papas+=cantidad
 
             # aviso que tal producto ya fue ingresado antes
             if nombre_producto in vistos:
@@ -52,5 +55,6 @@ else:
     print("Lista de productos agregados: ")
     print(ventas)
 
-    print(f"se ingreso {contador_papas} veces el producto 'papas' al sistema")
+    print(f"se ingreso {contador_ingreso_papas} veces el producto 'papas' al sistema")
+    print(f"la cantidad total de papas fue de: {contador_cantidad_papas}")
 
