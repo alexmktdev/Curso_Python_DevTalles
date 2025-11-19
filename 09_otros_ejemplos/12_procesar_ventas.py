@@ -15,7 +15,7 @@ def procesar_ventas(lista_productos):
 
     return total_vendido, total_cantidad, producto_mayor, mayor_subtotal
 
-
+# Programa principal 
 ventas = [
     {"nombre": "Pan", "cantidad": 3, "precio": 1200},
     {"nombre": "Leche", "cantidad": 2, "precio": 900},
